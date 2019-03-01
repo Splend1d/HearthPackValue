@@ -26,9 +26,9 @@ _weighted_dust_value = {'common': 0.977 * 5 + 0.023 * 50,
 def openpacks(x):
     x = 5 * x
     out = {}
-    if x >= 10:
+    if x >= 50:
         for k in _prob.keys():
-            out[k] = _prob[k] * (x - 10) + _prob_first_10[k] * 10
+            out[k] = _prob[k] * (x - 50) + _prob_first_10[k] * 50
         #print('avg_cards:', out)
         return out
     elif x >= 0:
